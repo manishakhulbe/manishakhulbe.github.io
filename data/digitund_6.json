@@ -1,0 +1,404 @@
+{
+  "students": [
+    {
+      "name": "Aleksandr",
+      "duration": "1m41s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 2,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 4,
+      "task 5 (T)": 1,
+      "performance category": 3
+    },
+    {
+      "name": "Olga",
+      "duration": "2m37s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 3,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Sergei",
+      "duration": "2m26s",
+      "task 1 (F)": 5,
+      "task 2 (FLT)": 3,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 2,
+      "task 5 (T)": 3,
+      "performance category": 1
+    },
+    {
+      "name": "Irina",
+      "duration": "3m09s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Vladimir",
+      "duration": "2m37s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Jelena",
+      "duration": "3m06s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Andrei",
+      "duration": "2m35s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Svetlana",
+      "duration": "2m34s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Aleksei",
+      "duration": "2m36s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Tatjana",
+      "duration": "3m39s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Martin",
+      "duration": "2m35s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Anna",
+      "duration": "3m41s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Andres",
+      "duration": "2m34s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Valentina",
+      "duration": "2m36s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 2,
+      "task 5 (T)": 1,
+      "performance category": 3
+    },
+    {
+      "name": "Dmitri",
+      "duration": "3m41s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Galina",
+      "duration": "3m19s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Igor",
+      "duration": "5m50s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 3,
+      "task 5 (T)": 3,
+      "performance category": 2
+    },
+    {
+      "name": "Natalja",
+      "duration": "7m30s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Toomas",
+      "duration": "7m03s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 3,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Maria",
+      "duration": "15m34s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Viktor",
+      "duration": "10m01s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Marina",
+      "duration": "7m11s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 2,
+      "performance category": 3
+    },
+    {
+      "name": "Margus",
+      "duration": "14m16s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Tiina",
+      "duration": "17m58s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Jüri",
+      "duration": "8m50s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Katrin",
+      "duration": "18m29s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Oleg",
+      "duration": "8m28s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Sirje",
+      "duration": "9m30s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Kristjan",
+      "duration": "13m19s",
+      "task 1 (F)": 3,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 2,
+      "performance category": 3
+    },
+    {
+      "name": "Anne",
+      "duration": "2m57s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 2,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Rein",
+      "duration": "6m56s",
+      "task 1 (F)": 3,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 4,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Jekaterina",
+      "duration": "8m14s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Roman",
+      "duration": "1m53s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Julia",
+      "duration": "8m47s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Urmas",
+      "duration": "3m49s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 2,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 4,
+      "performance category": 4
+    },
+    {
+      "name": "Ülle",
+      "duration": "3m02s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Maksim",
+      "duration": "2m02s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 1,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 6
+    },
+    {
+      "name": "Tiiu",
+      "duration": "4m44s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 5
+    },
+    {
+      "name": "Jaan",
+      "duration": "2m32s",
+      "task 1 (F)": 1,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 2,
+      "task 5 (T)": 1,
+      "performance category": 4
+    },
+    {
+      "name": "Kristina",
+      "duration": "6m49s",
+      "task 1 (F)": 2,
+      "task 2 (FLT)": 1,
+      "task 3 (F)": 2,
+      "taks 4 (L)": 1,
+      "task 5 (T)": 1,
+      "performance category": 4
+    }
+  ]
+}
