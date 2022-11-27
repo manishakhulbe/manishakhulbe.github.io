@@ -61,6 +61,14 @@ tr:nth-child(even) {
   width: 380px;
 }
 
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 180px;
+  margin: auto;
+}
+
 .boxes-graph-cell {
   height: 32px;
   width: 32px;
@@ -75,7 +83,7 @@ tr:nth-child(even) {
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
-  width: 128px;
+  width: 150px;
   background-color: rgba(0,0,0,.5);
   color: #fff;
   text-align: center;
