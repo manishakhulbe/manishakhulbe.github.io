@@ -24,7 +24,7 @@ window.onload = () => {
   students.sort((a, b) => a.performance - b.performance);
   students.forEach((student) => {
     const studentCell = document.createElement('div');
-    studentCell.classList.add('graph-overview-cell');
+    studentCell.classList.add('boxes-graph-cell');
     studentCell.classList.add('hovertext');
     studentCell.setAttribute(
       'data-hover',
@@ -44,4 +44,29 @@ window.onload = () => {
     }
     graphOverview.appendChild(studentCell);
   });
+
+  for (let i = 1; i <= 5; i++) {
+    const task = `task${i}`;
+    const taskGraph = document.getElementById(`graph-${task}-attempts`);
+    students.forEach((student) => {
+      const studentCell = document.createElement('div');
+      studentCell.classList.add('boxes-graph-cell');
+      studentCell.classList.add('hovertext');
+      studentCell.setAttribute(
+        'data-hover',
+        `${student.name}: ${student[task]}`
+      );
+      switch (student[task]) {
+        case 1:
+          studentCell.style.backgroundColor = 'rgb(102, 204, 255)';
+          break;
+        case 2:
+          studentCell.style.backgroundColor = 'rgb(255, 204, 102)';
+          break;
+        default:
+          studentCell.style.backgroundColor = 'rgb(255, 83, 26)';
+      }
+      taskGraph.appendChild(studentCell);
+    });
+  }
 };

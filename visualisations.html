@@ -11,30 +11,43 @@
 
 <body>
 
-  <div class="tab">
-    <button class="tablinks active" onclick="openTab(this, 'ClassOverview')">Class overview</button>
-    <button class="tablinks" onclick="openTab(this, 'TaskView')">Task view</button>
-    <button class="tablinks" onclick="openTab(this, 'StudentView')">Student view</button>
-  </div>
+  <div id="app">
 
-  <div id="ClassOverview" class="tabcontent">
-    <div id="graph-overview"></div>
-  </div>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(this, 'ClassOverview')">Class overview</button>
+      <button class="tablinks" onclick="openTab(this, 'TaskView')">Task view</button>
+      <button class="tablinks" onclick="openTab(this, 'StudentView')">Student view</button>
+    </div>
 
-  <div id="TaskView" class="tabcontent">
-    <p>Paris is the capital of France.</p>
-  </div>
+    <div id="ClassOverview" class="tabcontent">
+      Overall performance:
+      <div id="graph-overview" class="boxes-graph"></div>
+    </div>
 
-  <div id="StudentView" class="tabcontent">
-    <table>
-      <tr>
-        <th>Student</th>
-        <th>Task</th>
-        <th>Time</th>
-      </tr>
-    </table>
-  </div>
+    <div id="TaskView" class="tabcontent">
+      Task 1 attempts:
+      <div id="graph-task1-attempts" class="boxes-graph"></div>
+      Task 2 attempts:
+      <div id="graph-task2-attempts" class="boxes-graph"></div>
+      Task 3 attempts:
+      <div id="graph-task3-attempts" class="boxes-graph"></div>
+      Task 4 attempts:
+      <div id="graph-task4-attempts" class="boxes-graph"></div>
+      Task 5 attempts:
+      <div id="graph-task5-attempts" class="boxes-graph"></div>
+    </div>
 
+    <div id="StudentView" class="tabcontent">
+      <table>
+        <tr>
+          <th>Student</th>
+          <th>Task</th>
+          <th>Time</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
 
 </body>
 
