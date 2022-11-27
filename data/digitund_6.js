@@ -1,7 +1,7 @@
 export const students = [
   {
-    name: 'Aleksandr',
-    time: '1m41s',
+    name: 'Ivo',
+    time: '1m 41s',
     task1: 2,
     task2: 2,
     task3: 1,
@@ -10,8 +10,8 @@ export const students = [
     performance: 3,
   },
   {
-    name: 'Olga',
-    time: '2m37s',
+    name: 'Maris',
+    time: '2m 37s',
     task1: 1,
     task2: 3,
     task3: 2,
@@ -20,8 +20,8 @@ export const students = [
     performance: 4,
   },
   {
-    name: 'Sergei',
-    time: '2m26s',
+    name: 'Kaspar',
+    time: '2m 26s',
     task1: 5,
     task2: 3,
     task3: 2,
@@ -30,8 +30,8 @@ export const students = [
     performance: 1,
   },
   {
-    name: 'Irina',
-    time: '3m09s',
+    name: 'Erki',
+    time: '3m 9s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -40,8 +40,8 @@ export const students = [
     performance: 6,
   },
   {
-    name: 'Vladimir',
-    time: '2m37s',
+    name: 'Martti',
+    time: '2m 37s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -50,8 +50,8 @@ export const students = [
     performance: 5,
   },
   {
-    name: 'Jelena',
-    time: '3m06s',
+    name: 'Erika',
+    time: '3m 6s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -60,8 +60,8 @@ export const students = [
     performance: 6,
   },
   {
-    name: 'Andrei',
-    time: '2m35s',
+    name: 'Liisa',
+    time: '2m 35s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -70,8 +70,8 @@ export const students = [
     performance: 5,
   },
   {
-    name: 'Svetlana',
-    time: '2m34s',
+    name: 'Laura',
+    time: '2m 34s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -80,8 +80,8 @@ export const students = [
     performance: 5,
   },
   {
-    name: 'Aleksei',
-    time: '2m36s',
+    name: 'Norman',
+    time: '2m 36s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -90,8 +90,8 @@ export const students = [
     performance: 6,
   },
   {
-    name: 'Tatjana',
-    time: '3m39s',
+    name: 'Hanna',
+    time: '3m 39s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -101,7 +101,7 @@ export const students = [
   },
   {
     name: 'Martin',
-    time: '2m35s',
+    time: '2m 35s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -111,7 +111,7 @@ export const students = [
   },
   {
     name: 'Anna',
-    time: '3m41s',
+    time: '3m 41s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -121,7 +121,7 @@ export const students = [
   },
   {
     name: 'Andres',
-    time: '2m34s',
+    time: '2m 34s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -131,7 +131,7 @@ export const students = [
   },
   {
     name: 'Valentina',
-    time: '2m36s',
+    time: '2m 36s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -140,8 +140,8 @@ export const students = [
     performance: 3,
   },
   {
-    name: 'Dmitri',
-    time: '3m41s',
+    name: 'Risto',
+    time: '3m 41s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -150,8 +150,8 @@ export const students = [
     performance: 5,
   },
   {
-    name: 'Galina',
-    time: '3m19s',
+    name: 'Heljo',
+    time: '3m 19s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -161,7 +161,7 @@ export const students = [
   },
   {
     name: 'Igor',
-    time: '5m50s',
+    time: '5m 50s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -171,7 +171,7 @@ export const students = [
   },
   {
     name: 'Natalja',
-    time: '7m30s',
+    time: '7m 30s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -181,7 +181,7 @@ export const students = [
   },
   {
     name: 'Toomas',
-    time: '7m03s',
+    time: '7m 3s',
     task1: 2,
     task2: 3,
     task3: 1,
@@ -191,7 +191,7 @@ export const students = [
   },
   {
     name: 'Maria',
-    time: '15m34s',
+    time: '15m 34s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -201,7 +201,7 @@ export const students = [
   },
   {
     name: 'Viktor',
-    time: '10m01s',
+    time: '10m 1s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -210,8 +210,8 @@ export const students = [
     performance: 4,
   },
   {
-    name: 'Marina',
-    time: '7m11s',
+    name: 'Riina',
+    time: '7m 11s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -220,8 +220,8 @@ export const students = [
     performance: 3,
   },
   {
-    name: 'Margus',
-    time: '14m16s',
+    name: 'Triinu',
+    time: '14m 16s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -231,7 +231,7 @@ export const students = [
   },
   {
     name: 'Tiina',
-    time: '17m58s',
+    time: '17m 58s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -241,7 +241,7 @@ export const students = [
   },
   {
     name: 'Jüri',
-    time: '8m50s',
+    time: '8m 50s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -251,7 +251,7 @@ export const students = [
   },
   {
     name: 'Katrin',
-    time: '18m29s',
+    time: '18m 29s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -261,7 +261,7 @@ export const students = [
   },
   {
     name: 'Oleg',
-    time: '8m28s',
+    time: '8m 28s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -271,7 +271,7 @@ export const students = [
   },
   {
     name: 'Sirje',
-    time: '9m30s',
+    time: '9m 30s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -281,7 +281,7 @@ export const students = [
   },
   {
     name: 'Kristjan',
-    time: '13m19s',
+    time: '13m 19s',
     task1: 3,
     task2: 1,
     task3: 2,
@@ -291,7 +291,7 @@ export const students = [
   },
   {
     name: 'Anne',
-    time: '2m57s',
+    time: '2m 57s',
     task1: 1,
     task2: 2,
     task3: 2,
@@ -301,7 +301,7 @@ export const students = [
   },
   {
     name: 'Rein',
-    time: '6m56s',
+    time: '6m 56s',
     task1: 3,
     task2: 1,
     task3: 1,
@@ -311,7 +311,7 @@ export const students = [
   },
   {
     name: 'Jekaterina',
-    time: '8m14s',
+    time: '8m 14s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -321,7 +321,7 @@ export const students = [
   },
   {
     name: 'Roman',
-    time: '1m53s',
+    time: '1m 53s',
     task1: 1,
     task2: 1,
     task3: 1,
@@ -331,7 +331,7 @@ export const students = [
   },
   {
     name: 'Julia',
-    time: '8m47s',
+    time: '8m 47s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -341,7 +341,7 @@ export const students = [
   },
   {
     name: 'Urmas',
-    time: '3m49s',
+    time: '3m 49s',
     task1: 1,
     task2: 2,
     task3: 1,
@@ -351,7 +351,7 @@ export const students = [
   },
   {
     name: 'Ülle',
-    time: '3m02s',
+    time: '3m 2s',
     task1: 2,
     task2: 1,
     task3: 2,
@@ -361,7 +361,7 @@ export const students = [
   },
   {
     name: 'Maksim',
-    time: '2m02s',
+    time: '2m 2s',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -371,7 +371,7 @@ export const students = [
   },
   {
     name: 'Tiiu',
-    time: '4m44s',
+    time: '4m 44s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -381,7 +381,7 @@ export const students = [
   },
   {
     name: 'Jaan',
-    time: '2m32s',
+    time: '2m 32s',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -391,7 +391,7 @@ export const students = [
   },
   {
     name: 'Kristina',
-    time: '6m49s',
+    time: '6m 49s',
     task1: 2,
     task2: 1,
     task3: 2,
