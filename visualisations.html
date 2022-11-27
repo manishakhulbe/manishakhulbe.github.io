@@ -12,13 +12,13 @@
 <body>
 
   <div class="tab">
-    <button class="tablinks" onclick="openTab('ClassOverview')">Class overview</button>
-    <button class="tablinks" onclick="openTab('TaskView')">Task view</button>
-    <button class="tablinks" onclick="openTab('StudentView')">Student view</button>
+    <button class="tablinks active" onclick="openTab(this, 'ClassOverview')">Class overview</button>
+    <button class="tablinks" onclick="openTab(this, 'TaskView')">Task view</button>
+    <button class="tablinks" onclick="openTab(this, 'StudentView')">Student view</button>
   </div>
 
   <div id="ClassOverview" class="tabcontent">
-    <p>London is the capital city of England.</p>
+    <div id="graph-overview"></div>
   </div>
 
   <div id="TaskView" class="tabcontent">

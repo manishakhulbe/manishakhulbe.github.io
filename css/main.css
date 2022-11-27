@@ -42,10 +42,47 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+/* Overview graph */
+#graph-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 380px;
+}
+
+.graph-overview-cell {
+  height: 32px;
+  width: 32px;
+}
+
+/* Display on hover */
+.hovertext {
+  position: relative;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 128px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
