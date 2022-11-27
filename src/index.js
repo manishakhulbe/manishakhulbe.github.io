@@ -15,13 +15,12 @@ function openTab(activeTabLink, activeTab) {
 window.openTab = openTab;
 
 // DATA
-import studentsData from '../data/digitund_6.json' assert {type: 'json'};
+import {students} from '../data/digitund_6.js';
 
 window.onload = () => {
   // Display default tab
   document.getElementById('ClassOverview').style.display = 'block';
   const graphOverview = document.getElementById('graph-overview');
-  const students = studentsData.students;
   students.sort((a, b) => a.performance - b.performance);
   students.forEach((student) => {
     const studentCell = document.createElement('div');
