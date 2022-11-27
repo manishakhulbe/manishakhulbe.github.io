@@ -42,19 +42,16 @@ body {
   border-top: none;
 }
 
-table {
-  width: 70%;
-  border-collapse: collapse;
+h1 {
+  font-size: 12pt;
+  padding: 0px 0px 5px 0px;
+  margin: 0px;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 3px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+.explanation {
+  display: block;
+  margin-top: 5px;
+  padding-bottom: 20px;
 }
 
 /* Overview graph */
@@ -101,4 +98,19 @@ tr:nth-child(even) {
 .hovertext:hover:before {
   opacity: 1;
   visibility: visible;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 3px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
