@@ -1,3 +1,6 @@
+body {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
 #app {
   width: 67%;
   margin: auto;
@@ -47,6 +50,7 @@ table {
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
+  padding: 3px;
 }
 
 tr:nth-child(even) {
@@ -66,7 +70,6 @@ tr:nth-child(even) {
   flex-wrap: wrap;
   gap: 4px;
   width: 180px;
-  margin: auto;
 }
 
 .boxes-graph-cell {

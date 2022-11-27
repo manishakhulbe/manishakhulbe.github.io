@@ -97,7 +97,7 @@ window.onload = () => {
       studentCell.classList.add('hovertext');
       studentCell.setAttribute(
         'data-hover',
-        `Task ${i}: ${student[task]} attempts`
+        `Task ${i}: ${student[task]} attempt${student[task]==1?"":"s"}`
       );
       switch (student[task]) {
         case 1:
@@ -116,7 +116,6 @@ window.onload = () => {
 
     const performanceCell = document.createElement('td');
     const studentCell = document.createElement('div');
-    studentCell.style.margin = 'auto';
 
     studentCell.classList.add('boxes-graph-cell');
     studentCell.classList.add('hovertext');
