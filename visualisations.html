@@ -11,7 +11,7 @@
 
 <body>
 
-  <div id="app">
+  <div id="container">
 
     <div class="tab">
       <button class="tablinks active" onclick="openTab(this, 'ClassOverview')">Class overview</button>
@@ -20,20 +20,21 @@
     </div>
 
     <div id="ClassOverview" class="tabcontent">
-    <h1>Students' scores</h1>
+    <div class="row">
+      <h1>Students' scores</h1>
       <div id="graph-overview" class="boxes-graph"></div>
       <ul>
         <li>Most students (24/40, or 60%) solved the tasks with ease, obtaining a score of 5 or 6.</li>
         <li>Kaspar and Igor performed very poorly, making many incorrect attempts at most of the questions and obtaining scores of 1 and 2, respectively.</li>
       </ul>
-    <h1>Completion times</h1>
-    <h1>Student profiles</h1>
-    </div>
+      <div><h1>Completion times</h1></div>
+      <div><h1>Student profiles</h1></div>
+  </div>
+  </div>
 
     <div id="TaskView" class="tabcontent">
-      <h1>Task 1 (Formulate) - Number of attempts</h1>
-      <div id="graph-task1-attempts" class="boxes-graph"></div>
-      <span class="explanation">20 (50%) of the students struggled with this formulation task.</span>
+      <div><h1>Task 1 (Formulate) - Number of attempts</h1>
+      <div id="graph-task1-attempts" class="boxes-graph"></div><span class="explanation">20 (50%) of the students struggled with this formulation task.</span></div>
       <h1>Task 2 (F-L-T) - Number of attempts</h1>
       <div id="graph-task2-attempts" class="boxes-graph"></div>
       <span class="explanation">This combination task was dificult for 6 (15%) students.</span>
