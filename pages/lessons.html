@@ -22,14 +22,20 @@
   <title>
     Lessons
   </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <!-- <link href="../assets/demo/demo.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="./src/lessons.js"></script>
+
 </head>
 
 <body class="">
@@ -40,42 +46,43 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-    <div class="logo">
-      <a href="#" class="simple-text logo-normal">
-        Dashboard
-      </a>
+      <div class="logo">
+        <a href="#" class="simple-text logo-normal">
+          Dashboard
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="./index.html">
+              <i class="material-icons">dashboard</i>
+              <p>Class Overview</p>
+            </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="./lessons.html">
+              <i class="material-icons">content_paste</i>
+              <p>Task View</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./students.html">
+              <i class="material-icons">face</i>
+              <p>Student View</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="sidebar-wrapper">
-      <ul class="nav">
-        <li class="nav-item ">
-          <a class="nav-link" href="./index.html">
-            <i class="material-icons">dashboard</i>
-            <p>&Uuml;levaade</p>
-          </a>
-        </li>
-        <li class="nav-item active ">
-          <a class="nav-link" href="./lessons.html">
-            <i class="material-icons">content_paste</i>
-            <p>Tunnid</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./students.html">
-            <i class="material-icons">face</i>
-            <p>&Otilde;pilased</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="main-panel">
+    <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <a class="navbar-brand" href="#pablo">Lessons</a>
           </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -93,7 +100,8 @@
             </form>
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
                   <i class="material-icons">person</i>
                   <p class="d-lg-none d-md-block">
                     Account
@@ -117,75 +125,54 @@
             <div class="col-md-4">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Matemaatiline induktsioon - 1 (10-05-2022)</h4>
+                  <h4 class="card-title">Task 1</h4>
                   <p class="card-category"> </p>
                 </div>
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead class=" text-primary">
-                        <th>
-                          No.
-                        </th>
-                        <th>
-                          &Uuml;lesanne
-                        </th>
-                        <th>
-                          Oskuste tase
-                        </th>
-                        <th>
-                          Keskmine skoor
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1.
-                          </td>
-                          <td>
-                            Väike sissejuhatav test
-                          </td>
-                          <td>
-                            <i class="material-icons text-success">lens</i>
-                          </td>
-                          <td>
-                            4/5
-                          </td>
-                        <tr>
-                          <td>
-                            2.
-                          </td>
-                          <td>
-                            Matemaatilise induktsiooni meetod
-                          </td>
-                          <td>
-                            <i class="material-icons text-warning">lens</i>
-                          </td>
-                          <td>
-                            5/8
-                          </td>
-                      </tbody>
-                    </table>
-                    <div class="card-footer">
-                      <div class="stats">
-                        <i class="material-icons">library_books</i><a href="lesson1.html" class="card-link">Vaata detaile</a>
-                      </div>
-                    </div>
-                  </div>
+                  <div id="graph-task1-attempts" class="boxes-graph"></div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
+
               <div class="card">
-                <div class="card-header card-header-warning">
-                  <h4 class="card-title">Lisa uus tund</h4>
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Task 2</h4>
+                  <p class="card-category"> </p>
                 </div>
                 <div class="card-body">
-                  <p>&nbsp;</p>
-                  <p align="center"><a href="addlesson.html"><i class="material-icons">add</i></a></p>
-                  <p>&nbsp;</p>
+                  <div id="graph-task2-attempts" class="boxes-graph"></div>
                 </div>
               </div>
+
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Task 3</h4>
+                  <p class="card-category"> </p>
+                </div>
+                <div class="card-body">
+                  <div id="graph-task3-attempts" class="boxes-graph"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Task 4</h4>
+                  <p class="card-category"> </p>
+                </div>
+                <div class="card-body">
+                  <div id="graph-task4-attempts" class="boxes-graph"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Task 5</h4>
+                  <p class="card-category"> </p>
+                </div>
+                <div class="card-body">
+                  <div id="graph-task5-attempts" class="boxes-graph"></div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -245,10 +232,10 @@
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-  <script src="../assets/demo/demo.js"></script>
+  <!-- <script src="../assets/demo/demo.js"></script> -->
   <script>
-    $(document).ready(function() {
-      $().ready(function() {
+    $(document).ready(function () {
+      $().ready(function () {
         $sidebar = $('.sidebar');
 
         $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -268,7 +255,7 @@
 
         }
 
-        $('.fixed-plugin a').click(function(event) {
+        $('.fixed-plugin a').click(function (event) {
           // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
@@ -279,7 +266,7 @@
           }
         });
 
-        $('.fixed-plugin .active-color span').click(function() {
+        $('.fixed-plugin .active-color span').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).siblings().removeClass('active');
@@ -300,7 +287,7 @@
           }
         });
 
-        $('.fixed-plugin .background-color .badge').click(function() {
+        $('.fixed-plugin .background-color .badge').click(function () {
           $(this).siblings().removeClass('active');
           $(this).addClass('active');
 
@@ -311,7 +298,7 @@
           }
         });
 
-        $('.fixed-plugin .img-holder').click(function() {
+        $('.fixed-plugin .img-holder').click(function () {
           $full_page_background = $('.full-page-background');
 
           $(this).parent('li').siblings().removeClass('active');
@@ -321,7 +308,7 @@
           var new_image = $(this).find("img").attr('src');
 
           if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-            $sidebar_img_container.fadeOut('fast', function() {
+            $sidebar_img_container.fadeOut('fast', function () {
               $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
               $sidebar_img_container.fadeIn('fast');
             });
@@ -330,7 +317,7 @@
           if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
             var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-            $full_page_background.fadeOut('fast', function() {
+            $full_page_background.fadeOut('fast', function () {
               $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
               $full_page_background.fadeIn('fast');
             });
@@ -349,7 +336,7 @@
           }
         });
 
-        $('.switch-sidebar-image input').change(function() {
+        $('.switch-sidebar-image input').change(function () {
           $full_page_background = $('.full-page-background');
 
           $input = $(this);
@@ -381,7 +368,7 @@
           }
         });
 
-        $('.switch-sidebar-mini input').change(function() {
+        $('.switch-sidebar-mini input').change(function () {
           $body = $('body');
 
           $input = $(this);
@@ -396,7 +383,7 @@
 
             $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-            setTimeout(function() {
+            setTimeout(function () {
               $('body').addClass('sidebar-mini');
 
               md.misc.sidebar_mini_active = true;
@@ -404,12 +391,12 @@
           }
 
           // we simulate the window Resize so the charts will get updated in realtime.
-          var simulateWindowResize = setInterval(function() {
+          var simulateWindowResize = setInterval(function () {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
           // we stop the simulation of Window Resize after the animations are completed
-          setTimeout(function() {
+          setTimeout(function () {
             clearInterval(simulateWindowResize);
           }, 1000);
 

@@ -1,11 +1,5 @@
 /* Overview graph */
-.boxes-graph {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.tasks-container {
+.boxes-graph{
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
