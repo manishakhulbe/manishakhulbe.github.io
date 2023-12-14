@@ -43,7 +43,7 @@ window.onload = () => {
       studentCell.classList.add('hovertext');
       studentCell.setAttribute(
         'data-hover',
-        taskName
+        `${taskName}: ${student[task]}`
       );
       switch (student[task]) {
         case 3:
