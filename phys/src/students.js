@@ -23,7 +23,7 @@ window.onload = () => {
       let taskName = "";
       switch (i) {
         case 1:
-          taskName = "Description";
+          taskName = "Useful description";
           break;
         case 2:
           taskName = "Physics approach";

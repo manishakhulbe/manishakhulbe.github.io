@@ -5012,8 +5012,8 @@ tbody.collapse.show {
 }
 
 .alert-info {
-  color: #00626e;
-  background-color: #ccf2f6;
+  color: rgb(51, 51, 51);
+  background-color: rgb(102, 204, 255);
   border-color: #b8ecf3;
 }
 
@@ -5026,8 +5026,8 @@ tbody.collapse.show {
 }
 
 .alert-warning {
-  color: #857a1f;
-  background-color: #fffbd8;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 204, 102);
   border-color: #fff9c8;
 }
 
@@ -5041,7 +5041,7 @@ tbody.collapse.show {
 
 .alert-danger {
   color: #7f231c;
-  background-color: #fdd9d7;
+  background-color: rgb(255, 83, 26);
   border-color: #fccac7;
 }
 
@@ -13423,8 +13423,8 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .alert.alert-info {
-  background-color: #00cae3;
-  color: #ffffff;
+  background-color: rgb(102, 204, 255);
+  color: rgb(51, 51, 51);
 }
 
 .alert.alert-info a,
@@ -13433,8 +13433,8 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .alert.alert-warning {
-  background-color: #ff9e0f;
-  color: #ffffff;
+  background-color: rgb(255, 204, 102);
+  color: rgb(51, 51, 51);
 }
 
 .alert.alert-warning a,
@@ -13443,7 +13443,7 @@ fieldset[disabled] .form-group .form-control {
 }
 
 .alert.alert-danger {
-  background-color: #f55145;
+  background-color: rgb(255, 83, 26);
   color: #ffffff;
 }
 
