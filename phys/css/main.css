@@ -47,3 +47,7 @@ td, th {
   text-align: left;
   padding: 5px;
 }
+
+.table-responsive {
+  overflow-y: hidden;
+}
