@@ -17,12 +17,10 @@ window.onload = () => {
       studentCell.classList.add('hovertext');
       studentCell.setAttribute(
         'data-hover',
-        `${student.name}: ${student[task]} attempt${
-          student[task] == 1 ? '' : 's'
-        }`
+        `${student.name}'s score: ${student[task]}`
       );
       switch (student[task]) {
-        case 1:
+        case 3:
           studentCell.style.backgroundColor = blue;
           break;
         case 2:

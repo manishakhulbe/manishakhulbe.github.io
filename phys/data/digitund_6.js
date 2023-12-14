@@ -1,6 +1,6 @@
 export const students = [
   {
-    name: 'Ivo',
+    name: 'Annika',
     task1: 3,
     task2: 3,
     task3: 3,
@@ -8,7 +8,7 @@ export const students = [
     task5: 3,
   },
   {
-    name: 'Maris',
+    name: 'Desiree',
     task1: 2,
     task2: 3,
     task3: 3,
@@ -16,7 +16,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Kaspar',
+    name: 'Eva',
     task1: 2,
     task2: 2,
     task3: 2,
@@ -24,7 +24,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Erki',
+    name: 'Evelyn',
     task1: 1,
     task2: 2,
     task3: 3,
@@ -32,7 +32,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Martti',
+    name: 'Grete',
     task1: 0,
     task2: 1,
     task3: 2,
@@ -40,7 +40,7 @@ export const students = [
     task5: 1,
   },
   {
-    name: 'Erika',
+    name: 'Hanna',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -48,7 +48,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Liisa',
+    name: 'Kadi',
     task1: 1,
     task2: 2,
     task3: 1,
@@ -56,7 +56,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Laura',
+    name: 'Karl',
     task1: 0,
     task2: 1,
     task3: 2,
@@ -64,7 +64,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Norman',
+    name: 'Kevin',
     task1: 2,
     task2: 2,
     task3: 3,
@@ -72,7 +72,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Hanna',
+    name: 'Leelo',
     task1: 3,
     task2: 3,
     task3: 2,
@@ -80,7 +80,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Martin',
+    name: 'Liisbeth',
     task1: 1,
     task2: 0,
     task3: 2,
@@ -88,7 +88,7 @@ export const students = [
     task5: 1,
   },
   {
-    name: 'Anna',
+    name: 'Marko',
     task1: 2,
     task2: 2,
     task3: 2,
@@ -96,7 +96,7 @@ export const students = [
     task5: 3,
   },
   {
-    name: 'Andres',
+    name: 'Martin',
     task1: 2,
     task2: 2,
     task3: 3,
@@ -104,7 +104,7 @@ export const students = [
     task5: 3,
   },
   {
-    name: 'Valentina',
+    name: 'Nette',
     task1: 1,
     task2: 1,
     task3: 0,
@@ -112,7 +112,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Risto',
+    name: 'Reiko',
     task1: 2,
     task2: 2,
     task3: 1,
@@ -120,7 +120,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Heljo',
+    name: 'Rita',
     task1: 1,
     task2: 1,
     task3: 2,
@@ -128,7 +128,7 @@ export const students = [
     task5: 2,
   },
   {
-    name: 'Igor',
+    name: 'Silver',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -136,7 +136,7 @@ export const students = [
     task5: 1,
   },
   {
-    name: 'Natalja',
+    name: 'Stefany',
     task1: 2,
     task2: 1,
     task3: 1,
@@ -144,7 +144,7 @@ export const students = [
     task5: 1,
   },
   {
-    name: 'Toomas',
+    name: 'Sven',
     task1: 1,
     task2: 2,
     task3: 1,
@@ -152,7 +152,7 @@ export const students = [
     task5: 1,
   },
   {
-    name: 'Maria',
+    name: 'Vivian',
     task1: 3,
     task2: 3,
     task3: 2,
