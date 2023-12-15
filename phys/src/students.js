@@ -15,9 +15,54 @@ window.onload = () => {
     nameCell.innerHTML = student.name;
     row.appendChild(nameCell);
 
-    const tasksCell = document.createElement('td');
-    const tasksContainer = document.createElement('div');
-    tasksContainer.classList.add('boxes-graph');
+
+
+    const taskCell = document.createElement('td');
+    const TaskContainer = document.createElement('div');
+    TaskContainer.classList.add('boxes-graph');
+
+    for (let i = 1; i <= 3; i++) {
+      let taskName = "";
+      switch (i) {
+        case 1:
+          taskName = "Stating problem";
+          break;
+        case 2:
+          taskName = "Exploring problem";
+          break;
+        case 3:
+          taskName = "Applying solution (Complex task)";
+      }
+      const task = `score${i}`;
+      const studentCell = document.createElement('div');
+      studentCell.classList.add('boxes-graph-cell');
+      studentCell.classList.add('hovertext');
+      studentCell.setAttribute(
+        'data-hover',
+        `${taskName}: ${student[task]}%`
+      );
+
+      if (student[task] <= 50) {
+        studentCell.style.backgroundColor = red;
+      } else if (student[task] <= 80) {
+        studentCell.style.backgroundColor = yellow;
+      } else {
+        studentCell.style.backgroundColor = blue;
+      }
+
+      TaskContainer.appendChild(studentCell);
+    }
+    taskCell.appendChild(TaskContainer);
+    row.appendChild(taskCell);
+
+
+
+
+
+
+    const problemSolvingCell = document.createElement('td');
+    const problemSolvingContainer = document.createElement('div');
+    problemSolvingContainer.classList.add('boxes-graph');
 
     for (let i = 1; i <= 5; i++) {
       let taskName = "";
@@ -55,10 +100,10 @@ window.onload = () => {
         default:
           studentCell.style.backgroundColor = red;
       }
-      tasksContainer.appendChild(studentCell);
+      problemSolvingContainer.appendChild(studentCell);
     }
-    tasksCell.appendChild(tasksContainer);
-    row.appendChild(tasksCell);
+    problemSolvingCell.appendChild(problemSolvingContainer);
+    row.appendChild(problemSolvingCell);
 
     studentViewTable.appendChild(row);
   });
