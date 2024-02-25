@@ -51,3 +51,20 @@ td, th {
 .table-responsive {
   overflow-y: hidden;
 }
+
+
+/* Legend on comparison view 3 */
+#legend {
+  margin-bottom: 16px;
+}
+
+.legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.legend-row-text {
+  margin-left: 5px;
+  line-height: 32px;
+}
