@@ -44,7 +44,7 @@ window.onload = () => {
 
     // Name cell
     const nameCell = document.createElement('td');
-    nameCell.innerHTML = student.name;
+    nameCell.innerHTML = `Student ${student.name}`;
     row.appendChild(nameCell);
 
     // Tasks
