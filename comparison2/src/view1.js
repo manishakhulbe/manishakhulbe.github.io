@@ -1,5 +1,5 @@
 // DATA
-import {students} from '../data/digitund_6.js';
+import { students } from '../data/digitund_6.js';
 
 
 window.onload = () => {
@@ -7,13 +7,13 @@ window.onload = () => {
   students.sort((a, b) => a.performance - b.performance);
   const studentViewTable = document.getElementById('student-table');
   students.forEach((student) => {
-    
+
     // Row
     const row = document.createElement('tr');
 
     // Name cell
     const nameCell = document.createElement('td');
-    nameCell.innerHTML = student.name;
+    nameCell.innerHTML = `Student ${student.name}`;
     row.appendChild(nameCell);
 
     // Tasks
