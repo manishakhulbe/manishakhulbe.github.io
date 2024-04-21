@@ -1,5 +1,6 @@
 // DATA
-import {students} from '../data/digitund_6.js';
+import { students } from '../data/digitund_6.js';
+
 
 const red = 'rgb(255, 83, 26)';
 const yellow = 'rgb(255, 204, 102)';
@@ -7,27 +8,79 @@ const blue = 'rgb(102, 204, 255)';
 
 
 window.onload = () => {
-  // Tasks graphs
-  ['useful_desc', 'phys_approach', 'spec_phys_app', 'logical_prog'].forEach((task) => {
-    const taskGraph = document.getElementById(`graph-${task}`);
-    students.forEach((student) => {
-      const studentCell = document.createElement('div');
-      studentCell.classList.add('boxes-graph-cell');
-      studentCell.classList.add('hovertext');
-      studentCell.setAttribute(
-        'data-hover',
-        `Student ${student.name}'s score: ${student[task]}`
-      );
+  // Student view graphs
+  students.sort((a, b) => a.performance - b.performance);
+  const studentViewTable = document.getElementById('student-table');
 
-      if (student[task] <= 2) {
-        studentCell.style.backgroundColor = red;
-      } else if (student[task] <= 3) {
-        studentCell.style.backgroundColor = yellow;
-      } else {
-        studentCell.style.backgroundColor = blue;
-      }
+  // Mean
+  // Row
+  const row = document.createElement('tr');
 
-      taskGraph.appendChild(studentCell);
-    });
+  // Name cell
+  const nameCell = document.createElement('td');
+  nameCell.innerHTML = 'Average';
+  nameCell.style.fontWeight = 'bold';
+  row.appendChild(nameCell);
+  const sums = students.reduce((acc, student) => {
+    acc[0] += student['pre_fys'];
+    acc[1] += student['post_fys'];
+    acc[2] += student['task1'];
+    acc[3] += student['task2'];
+    acc[4] += student['task3'];
+    return acc;
+  }, [0, 0, 0, 0, 0]);
+  const averages = sums.map((value) => Math.round((value / students.length) * 100) / 100);
+  averages.forEach((average) => {
+    const taskCell = document.createElement('td');
+    const square = scoreSquare(average);
+    square.style.borderRadius = '50%';
+    taskCell.appendChild(square);
+    row.appendChild(taskCell);
+  })
+  studentViewTable.appendChild(row);
+
+  // Students
+  students.forEach((student) => {
+
+    // Row
+    const row = document.createElement('tr');
+
+    // Name cell
+    const nameCell = document.createElement('td');
+    nameCell.innerHTML = `Student ${student.name}`;
+    nameCell.classList.add('hovertext');
+    nameCell.setAttribute(
+      'data-hover',
+      `Docktor’s score for understanding a problem is ${student.pss}`
+    );
+    row.appendChild(nameCell);
+
+    // Tasks
+    ['pre_fys', 'post_fys', 'task1', 'task2', 'task3'].forEach((taskName) => {
+      const taskCell = document.createElement('td');
+      taskCell.appendChild(scoreSquare(student[taskName]));
+      row.appendChild(taskCell);
+    })
+
+    studentViewTable.appendChild(row);
   });
 };
+
+
+function scoreSquare(score) {
+  const scoreSquare = document.createElement('div');
+  scoreSquare.classList.add('boxes-graph-cell');
+  scoreSquare.classList.add('hovertext');
+  scoreSquare.setAttribute(
+    'data-hover',
+    `Score: ${score}`
+  );
+  if (score <= .33) {
+    scoreSquare.style.backgroundColor = red;
+  } else if (score <= .66) {
+    scoreSquare.style.backgroundColor = yellow;
+  } else {
+    scoreSquare.style.backgroundColor = blue;
+  }
+  return scoreSquare
+}

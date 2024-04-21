@@ -73,12 +73,6 @@
               <p>Actionable</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./view5.html">
-              <i class="material-icons">dashboard</i>
-              <p>Understandable-2</p>
-            </a>
-          </li>
           </li>
         </ul>
       </div>
@@ -87,131 +81,32 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Useful Description</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Some text here?</p>
-                          <div id="graph-useful_desc" class="boxes-graph"></div>
-                          <br>
-                          <div id="legend">
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 83, 26);"></div>
-                              <div class="legend-row-text">The student does not understand the problem setting</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 204, 102);"></div>
-                              <div class="legend-row-text">The student has logic errors in their problem setting
-                                statement</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(102, 204, 255);"></div>
-                              <div class="legend-row-text">The student has a good understanding of the problem setting
-                              </div>
-                            </span>
-                          </div>
-                          <br>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Physics Approach</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Some text here?</p>
-                          <div id="graph-phys_approach" class="boxes-graph"></div>
-                          <br>
-                          <div id="legend">
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 83, 26);"></div>
-                              <div class="legend-row-text">The students lacks an understanding of relevant physics
-                                concepts</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 204, 102);"></div>
-                              <div class="legend-row-text">The student has made mistakes with relevant physics concepts
-                              </div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(102, 204, 255);"></div>
-                              <div class="legend-row-text">The student has a good understanding of relevant concepts
-                              </div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Specific Physics Application</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Some text here?</p>
-                          <div id="graph-spec_phys_app" class="boxes-graph"></div>
-                          <br>
-                          <div id="legend">
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 83, 26);"></div>
-                              <div class="legend-row-text">The student does not apply relevant formulas</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 204, 102);"></div>
-                              <div class="legend-row-text">The student makes mistakes when applying formulas</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(102, 204, 255);"></div>
-                              <div class="legend-row-text">The student applies formulas well</div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Logical Progression</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Some text here?</p>
-                          <div id="graph-logical_prog" class="boxes-graph"></div>
-                          <br>
-                          <div id="legend">
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 83, 26);"></div>
-                              <div class="legend-row-text">The student is not able to progress to an appropriate goal
-                              </div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(255, 204, 102);"></div>
-                              <div class="legend-row-text">The student makes logical leaps when trying to solve a
-                                problem</div>
-                            </span>
-                            <span class="legend-row">
-                              <div class="boxes-graph-cell" style="background-color: rgb(102, 204, 255);"></div>
-                              <div class="legend-row-text">The student's steps for reaching a problem solution are
-                                evident</div>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                  <div class="table-responsive">
+                    <table class="table" id="student-table">
+                      <thead class=" text-primary">
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Pre-test score
+                        </th>
+                        <th>
+                          Post-test score
+                        </th>
+                        <th>
+                          Task 1
+                        </th>
+                        <th>
+                          Task 2
+                        </th>
+                        <th>
+                          Task 3
+                        </th>
+                      </thead>
+                    </table>
                   </div>
                 </div>
               </div>
