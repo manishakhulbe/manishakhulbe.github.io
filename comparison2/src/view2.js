@@ -86,11 +86,6 @@ window.onload = () => {
     // Name cell
     const nameCell = document.createElement('td');
     nameCell.innerHTML = `Student ${student.name}`;
-    nameCell.classList.add('hovertext');
-    nameCell.setAttribute(
-      'data-hover',
-      `Docktor’s score for understanding a problem is ${student.pss}`
-    );
     row.appendChild(nameCell);
 
     // Tasks

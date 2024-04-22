@@ -87,21 +87,25 @@ window.onload = () => {
     nameCell.innerHTML = `Student ${student.name}`;
     switch (student.name) {
       case 3:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Encourage the student to assist peers.<br>▪ Complex task: Ask them to prepare a short presentation of their problem solution to share with others.");
         };
         break;
       case 4:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Ask a follow-up question of a core concept<br>▪ Complex task: Encourage the student to assist peers.");
         };
         break;
       case 5:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Focus on revising foundational concepts like \"Light\" <br>▪ Complex task: Offer personalized feedback of their problem solution");
         };
         break;
       case 6:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, `▪ Task 1, 2, and 3: Review the student's engagement and understanding in class through direct observation and discussions. <br>▪ Complex task: Provide additional support through tutorials or pair them with "Student 3"`);
         };

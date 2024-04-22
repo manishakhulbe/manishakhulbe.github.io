@@ -45,6 +45,7 @@ window.onload = () => {
   // Name cell
   const nameCell = document.createElement('td');
   nameCell.innerHTML = 'Average';
+  nameCell.style.textDecoration = 'underline';
   row.onclick = () => {
     openModal('Class average', `There's a noticeable variation in pre-test scores, suggesting different 
     starting levels of understanding. Variation with Complex Task scores indicate a need 
@@ -92,24 +93,28 @@ window.onload = () => {
     nameCell.innerHTML = `Student ${student.name}`;
     switch (student.name) {
       case 3:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, `This student consistently scores high across all tasks, demonstrating 
           strong problem-solving skills and understanding`);
         };
         break;
       case 4:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, `This student performs adequately in regular tasks but struggles with 
           complex tasks.`);
         };
         break;
       case 5:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, `Despite a low pre-test score, this student shows improvement and 
           average performance in task execution.`);
         };
         break;
       case 6:
+        nameCell.style.textDecoration = 'underline';
         row.onclick = () => {
           openModal(`Student ${student.name}`, `While the pre-test scores were average, there is a noticeable decline in 
           task performance.`);
