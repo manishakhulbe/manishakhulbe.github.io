@@ -1,5 +1,5 @@
 /* Overview graph */
-.boxes-graph{
+.boxes-graph {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
@@ -21,7 +21,7 @@
   visibility: hidden;
   opacity: 0;
   width: 150px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
   color: #fff;
   text-align: center;
   transition: opacity 0.5s ease-in-out;
@@ -42,7 +42,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   border-bottom: 1px solid #dddddd;
   text-align: left;
   padding: 5px;
@@ -67,4 +68,39 @@ td, th {
 .legend-row-text {
   margin-left: 5px;
   line-height: 32px;
+}
+
+/* Info modal */
+#student-info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  overflow: auto;
+  z-index: 888;
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
 }

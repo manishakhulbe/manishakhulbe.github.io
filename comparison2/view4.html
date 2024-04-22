@@ -36,6 +36,15 @@
 </head>
 
 <body class="">
+  <div id="student-info">
+    <div class="modal-content">
+      <span id="student-info-close" class="close">&times;</span>
+      <br>
+      <h2 id="student-info-title"></h2>
+      <p id="student-info-content"></p>
+    </div>
+  </div>
+
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
       <!--
@@ -81,52 +90,35 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
               <div class="card">
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Pre_FYS and Physics Application</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Students with weak prior knowledge have a hard time applying physics concepts. Consider
-                            going over the basic concepts with them.</p>
-                          <br>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Complex Task and PSS</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>Students with high complex task ability are also good problem solvers. Looks like these
-                            tasks target problem-solving abilities well! Consider using a similar exercise structure
-                            with the next topics.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-3">
-                      <div class="card">
-                        <div class="card-header card-header-primary">
-                          <h4 class="card-title">Descriptive Utterances and Useful Description</h4>
-                          <p class="card-category"> </p>
-                        </div>
-                        <div class="card-body">
-                          <p>It seems written task answer length is not a good indication of whether students understand
-                            the nature of the problem. Consider discussing the problem statement together with them.</p>
-                          <div id="graph-spec_phys_app" class="boxes-graph"></div>
-                        </div>
-                      </div>
-                    </div>
-
+                  <div class="table-responsive">
+                    <table class="table" id="student-table" style="overflow: hidden;">
+                      <thead class=" text-primary">
+                        <th>
+                          Name
+                        </th>
+                        <th id="title-pre-test">
+                          Pre-test score
+                        </th>
+                        <th class="title-tasks">
+                          Task 1
+                        </th>
+                        <th class="title-tasks">
+                          Task 2
+                        </th>
+                        <th class="title-tasks">
+                          Task 3
+                        </th>
+                        <th id="title-complex-task">
+                          Complex task
+                        </th>
+                        <th>
+                          Post-test score
+                        </th>
+                      </thead>
+                    </table>
                   </div>
                 </div>
               </div>
