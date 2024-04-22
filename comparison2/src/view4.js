@@ -129,11 +129,11 @@ window.onload = () => {
   };
 
   document.getElementById('title-pre-test').onclick = () => {
-    openModal(`Class pre-test score`, `Consider grouping students by ability for solving the complex task, so each student is challenged appropriately.`);
+    openModal(`Pre-test score`, `Consider grouping students by ability for solving the complex task, so each student is challenged appropriately.`);
   };
 
   document.getElementById('title-complex-task').onclick = () => {
-    openModal(`Class complex task`, `Incorporate more structured problem-solving scaffolds as a classroom demonstration`);
+    openModal(`Complex task`, `Incorporate more structured problem-solving scaffolds as a classroom demonstration`);
   };
 
   const taskTitles = document.getElementsByClassName('title-tasks')
