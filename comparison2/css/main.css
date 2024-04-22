@@ -90,6 +90,7 @@ th {
 
 .close {
   float: right;
+  align-self: end;
   font-size: 28px;
   font-weight: bold;
 }
