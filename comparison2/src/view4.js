@@ -34,6 +34,34 @@ const scores = {
 }
 
 window.onload = () => {
+  // Help modals
+  document.getElementById('student-info-close').onclick = () => {
+    document.getElementById('student-info').style.display = 'none';
+  };
+
+  document.getElementById('help-struggling-students').onclick = () => {
+    openModal(`Help struggling students`, `<p>“14 students with weak prior knowledge have difficulty understanding how light reflects from mirrors. Consider going over the basic concepts with the whole class.”</p>
+    <p>“The law of reflection states that θi = θr, or in other words, the angle of incidence equals the angle of reflection.”
+    <br>If this is too abstract for them, consider the following explanation:
+    <br>“Think about throwing a ball at a wall. If you throw the ball straight at the wall, it bounces straight back to you. If you throw it at an angle, it bounces off at the same angle in the opposite direction. The law of reflection says that the angle you throw the ball at the wall (angle of incidence) is the same as the angle it bounces back (angle of reflection). Just like with a ball, light acts the same way when it hits a mirror.”</p>`);
+  };
+
+  document.getElementById('help-problem-solving').onclick = () => {
+    openModal(`Guide problem solving`, `<p>“The low complex task scores indicate that these 10 students are struggling in applying their knowledge of light reflection. Consider discussing the problem-solution steps in the context of reflection with them.”</p>
+    <p>
+    State the Problem: Describe what's going wrong or what you need to fix.
+    <br>Gather Information: Look for details and learn more about the problem.
+    <br>Propose a Solution: Think of a way to fix the problem based on what you learned.
+    <br>Test the Solution: Try out your idea to see if it solves the problem. If it doesn’t work, you might need to think of another solution and start the cycle again!
+</p>`);
+  };
+
+  document.getElementById('help-challenge-expert-students').onclick = () => {
+    openModal(`Challenge expert students`, `<p>“These 5 students with high complex task scores are also good problem solvers. Consider assigning them as guides for Novice students.”</p>
+    <p>Guiding others is developing their ability to communicate complex ideas.</p>`);
+  };
+
+
   // Student view graphs
   students.sort((a, b) => a.performance - b.performance);
   const studentViewTable = document.getElementById('student-table');
@@ -85,32 +113,6 @@ window.onload = () => {
     // Name cell
     const nameCell = document.createElement('td');
     nameCell.innerHTML = `Student ${student.name}`;
-    switch (student.name) {
-      case 3:
-        nameCell.style.textDecoration = 'underline';
-        row.onclick = () => {
-          openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Encourage the student to assist peers.<br>▪ Complex task: Ask them to prepare a short presentation of their problem solution to share with others.");
-        };
-        break;
-      case 4:
-        nameCell.style.textDecoration = 'underline';
-        row.onclick = () => {
-          openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Ask a follow-up question of a core concept<br>▪ Complex task: Encourage the student to assist peers.");
-        };
-        break;
-      case 5:
-        nameCell.style.textDecoration = 'underline';
-        row.onclick = () => {
-          openModal(`Student ${student.name}`, "▪ Task 1, 2, and 3: Focus on revising foundational concepts like \"Light\" <br>▪ Complex task: Offer personalized feedback of their problem solution");
-        };
-        break;
-      case 6:
-        nameCell.style.textDecoration = 'underline';
-        row.onclick = () => {
-          openModal(`Student ${student.name}`, `▪ Task 1, 2, and 3: Review the student's engagement and understanding in class through direct observation and discussions. <br>▪ Complex task: Provide additional support through tutorials or pair them with "Student 3"`);
-        };
-        break;
-    }
     row.appendChild(nameCell);
 
     // Tasks
@@ -122,27 +124,6 @@ window.onload = () => {
 
     studentViewTable.appendChild(row);
   });
-
-  // Student info modal
-  document.getElementById('student-info-close').onclick = () => {
-    document.getElementById('student-info').style.display = 'none';
-  };
-
-  document.getElementById('title-pre-test').onclick = () => {
-    openModal(`Pre-test score`, `Consider grouping students by ability for solving the complex task, so each student is challenged appropriately.`);
-  };
-
-  document.getElementById('title-complex-task').onclick = () => {
-    openModal(`Complex task`, `Incorporate more structured problem-solving scaffolds as a classroom demonstration`);
-  };
-
-  const taskTitles = document.getElementsByClassName('title-tasks')
-  for (var i = 0; i < taskTitles.length; i++) {
-    const title = taskTitles.item(i);
-    title.onclick = () => {
-      openModal(title.innerHTML, `Go over the core concepts together, in the form of a presentation.`);
-    };
-  }
 };
 
 
