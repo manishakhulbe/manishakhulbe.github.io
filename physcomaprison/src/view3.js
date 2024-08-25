@@ -4,40 +4,42 @@ import { students } from '../data/physcompare.js';
 
 const red = 'rgb(255, 83, 26)';
 const yellow = 'rgb(255, 204, 102)';
-const blue = 'rgb(102, 204, 255)';
+const green = 'rgb(89, 201, 119)';
 
 const scores = {
-  'Pre-test': {
-    'yellow': 33,
-    'blue': 66,
-  },
-  'Post-test': {
-    'yellow': 33,
-    'blue': 66,
-  },
-  'Mean 1, 2, and 3 task score': {
-    'yellow': 33,
-    'blue': 66,
-  },
-  'Complex Task': {
-    'yellow': 33,
-    'blue': 66,
+  'Valdkonna Teadmised (%)': {
+    'yellow': 40,
+    'green': 65,
   },
 }
 
 
 window.onload = () => {
+  // Means
+  const means = students.reduce((acc, student) => {
+    [
+      'Valdkonna Teadmised (%)',
+    ].forEach((key) => {
+      acc[key] += parseFloat(student[key])
+    })
+    return acc
+  }, {
+    'Valdkonna Teadmised (%)': 0,
+  });
+  [
+    'Valdkonna Teadmised (%)',
+  ].forEach((key) => {
+    means[key] = Math.round(means[key] / students.length * 10) / 10;
+  })
+
+
+
   const studentViewTable = document.getElementById('student-table');
 
   const studentsData = students.map((student) => {
     return {
       'ID': student.ID,
-      'Pre-test': parseFloat(student['Pre-test']),
-      'Post-test': parseFloat(student['Post-test']),
-      'Mean 1, 2, and 3 task score': (parseFloat(student['Task 1']) + parseFloat(student['Task 2']) + parseFloat(student['Task 3'])) / 3.0,
-      'Post-test change from pre-test': parseFloat(student['Post-test']) - parseFloat(student['Pre-test']),
-      'Complex Task': parseFloat(student['Complex Task']),
-      'Complex Task Made Correction (1-Y, 0-N)': student['Complex Task Made Correction (1-Y, 0-N)'] == '1' ? 'Yes' : 'No',
+      'Valdkonna Teadmised (%)': parseFloat(student['Valdkonna Teadmised (%)']),
     };
   });
   console.log(studentsData);
@@ -47,12 +49,7 @@ window.onload = () => {
   rowHeader.classList.add('text-primary');
   [
     'ID',
-    'Pre-test',
-    'Post-test',
-    'Mean 1, 2, and 3 task score',
-    'Complex Task',
-    'Post-test change from pre-test',
-    'Complex Task Made Correction',
+    'Valdkonna Teadmised (%)',
   ].forEach((title) => {
     const titleCell = document.createElement('th');
     titleCell.innerHTML = title;
@@ -60,6 +57,20 @@ window.onload = () => {
   })
   studentViewTable.appendChild(rowHeader);
 
+  // Means
+  const row = document.createElement('tr');
+  const nameCell = document.createElement('th');
+  nameCell.innerHTML = 'Keskmine';
+  row.appendChild(nameCell);
+  [
+    'Valdkonna Teadmised (%)',
+  ].forEach((title) => {
+    const titleCell = document.createElement('th');
+    titleCell.appendChild(scoreSquare(means[title], scores[title]));
+    row.appendChild(titleCell);
+  })
+  row.style.fontStyle = 'italic';
+  studentViewTable.appendChild(row);
 
   // Students
   studentsData.forEach((student) => {
@@ -74,25 +85,12 @@ window.onload = () => {
 
     // Color-coded cells
     [
-      'Pre-test',
-      'Post-test',
-      'Mean 1, 2, and 3 task score',
-      'Complex Task',
+      'Valdkonna Teadmised (%)',
     ].forEach((taskName) => {
       const taskCell = document.createElement('td');
       taskCell.appendChild(scoreSquare(student[taskName], scores[taskName]));
       row.appendChild(taskCell);
     });
-
-    // Other cells
-    [
-      'Post-test change from pre-test',
-      'Complex Task Made Correction (1-Y, 0-N)',
-    ].forEach((taskName) => {
-      const taskCell = document.createElement('td');
-      taskCell.innerHTML = student[taskName];
-      row.appendChild(taskCell);
-    })
 
     studentViewTable.appendChild(row);
   });
@@ -107,12 +105,12 @@ function scoreSquare(score, limits) {
     'data-hover',
     `Score: ${score}`
   );
-  if (score <= limits.yellow) {
+  if (score < limits.yellow) {
     scoreSquare.style.backgroundColor = red;
-  } else if (score <= limits.blue) {
+  } else if (score < limits.green) {
     scoreSquare.style.backgroundColor = yellow;
   } else {
-    scoreSquare.style.backgroundColor = blue;
+    scoreSquare.style.backgroundColor = green;
   }
   return scoreSquare
 }
