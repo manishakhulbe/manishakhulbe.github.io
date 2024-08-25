@@ -1,10 +1,10 @@
 // DATA
 import { students } from '../data/physcompare.js';
-
+let means;
 
 window.onload = () => {
   // Means
-  const means = students.reduce((acc, student) => {
+  means = students.reduce((acc, student) => {
     [
       'Eeltest',
       'Ülesanne 1',
@@ -35,9 +35,16 @@ window.onload = () => {
     means[key] = Math.round(means[key] / students.length * 10) / 10;
   })
 
+  fillTable(means, 'Valdikonna Teadmised (%)', 'asc');
+};
+
+function fillTable(sortBy, sortOrder) {
+  sortStudents(sortBy, sortOrder);
+
   // Student view graphs
   students.sort((a, b) => a.performance - b.performance);
   const studentViewTable = document.getElementById('student-table');
+  studentViewTable.innerHTML = '';
 
   // Header
   const rowHeader = document.createElement('tr');
@@ -53,6 +60,7 @@ window.onload = () => {
   ].forEach((title) => {
     const titleCell = document.createElement('th');
     titleCell.innerHTML = title;
+    titleCell.onclick = function () { fillTable(title, sortBy == title ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
     rowHeader.appendChild(titleCell);
   })
   studentViewTable.appendChild(rowHeader);
@@ -98,4 +106,27 @@ window.onload = () => {
 
     studentViewTable.appendChild(row);
   });
-};
+}
+
+
+function sortStudents(sortBy, sortOrder) {
+  switch (sortBy) {
+    case 'Kas parandas oma probleemülesannet?':
+      students.sort((a, b) => {
+        if (sortOrder == 'asc') {
+          return a[sortBy] > b[sortBy];
+        } else {
+          return b[sortBy] > a[sortBy];
+        }
+      });
+      break;
+    default:
+      students.sort((a, b) => {
+        if (sortOrder == 'asc') {
+          return parseFloat(a[sortBy]) - parseFloat(b[sortBy]);
+        } else {
+          return parseFloat(b[sortBy]) - parseFloat(a[sortBy]);
+        }
+      });
+  }
+}

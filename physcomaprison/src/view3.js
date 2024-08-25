@@ -1,6 +1,6 @@
 // DATA
 import { students } from '../data/physcompare.js';
-
+let means;
 
 const red = 'rgb(255, 83, 26)';
 const yellow = 'rgb(255, 204, 102)';
@@ -16,7 +16,7 @@ const scores = {
 
 window.onload = () => {
   // Means
-  const means = students.reduce((acc, student) => {
+  means = students.reduce((acc, student) => {
     [
       'Valdkonna Teadmised (%)',
     ].forEach((key) => {
@@ -32,17 +32,15 @@ window.onload = () => {
     means[key] = Math.round(means[key] / students.length * 10) / 10;
   })
 
+  fillTable('Valdkonna Teadmised (%)', 'asc');
+};
 
+function fillTable(sortBy, sortOrder) {
+  sortStudents(sortBy, sortOrder);
 
   const studentViewTable = document.getElementById('student-table');
+  studentViewTable.innerHTML = '';
 
-  const studentsData = students.map((student) => {
-    return {
-      'ID': student.ID,
-      'Valdkonna Teadmised (%)': parseFloat(student['Valdkonna Teadmised (%)']),
-    };
-  });
-  console.log(studentsData);
 
   // Header
   const rowHeader = document.createElement('tr');
@@ -53,6 +51,7 @@ window.onload = () => {
   ].forEach((title) => {
     const titleCell = document.createElement('th');
     titleCell.innerHTML = title;
+    titleCell.onclick = function () { fillTable(title, sortBy == title ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
     rowHeader.appendChild(titleCell);
   })
   studentViewTable.appendChild(rowHeader);
@@ -73,7 +72,7 @@ window.onload = () => {
   studentViewTable.appendChild(row);
 
   // Students
-  studentsData.forEach((student) => {
+  students.forEach((student) => {
 
     // Row
     const row = document.createElement('tr');
@@ -94,7 +93,7 @@ window.onload = () => {
 
     studentViewTable.appendChild(row);
   });
-};
+}
 
 
 function scoreSquare(score, limits) {
@@ -113,4 +112,26 @@ function scoreSquare(score, limits) {
     scoreSquare.style.backgroundColor = green;
   }
   return scoreSquare
+}
+
+function sortStudents(sortBy, sortOrder) {
+  switch (sortBy) {
+    case 'Kas parandas oma probleemülesannet?':
+      students.sort((a, b) => {
+        if (sortOrder == 'asc') {
+          return a[sortBy] > b[sortBy];
+        } else {
+          return b[sortBy] > a[sortBy];
+        }
+      });
+      break;
+    default:
+      students.sort((a, b) => {
+        if (sortOrder == 'asc') {
+          return parseFloat(a[sortBy]) - parseFloat(b[sortBy]);
+        } else {
+          return parseFloat(b[sortBy]) - parseFloat(a[sortBy]);
+        }
+      });
+  }
 }
