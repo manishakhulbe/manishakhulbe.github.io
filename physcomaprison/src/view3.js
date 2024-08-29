@@ -11,6 +11,14 @@ const scores = {
     'yellow': 40,
     'green': 65,
   },
+  'Pingutus (%)': {
+    'yellow': 3.0,
+    'green': 4.0,
+  },
+  'Probleemülesanne': {
+    'yellow': 34,
+    'green': 68,
+  },
 }
 
 
@@ -25,9 +33,13 @@ window.onload = () => {
     return acc
   }, {
     'Valdkonna Teadmised (%)': 0,
+    'Pingutus (%)': 0,
+    'Probleemülesanne': 0,
   });
   [
     'Valdkonna Teadmised (%)',
+    'Pingutus (%)',
+    'Probleemülesanne',
   ].forEach((key) => {
     means[key] = Math.round(means[key] / students.length * 10) / 10;
   })
@@ -46,12 +58,24 @@ function fillTable(sortBy, sortOrder) {
   const rowHeader = document.createElement('tr');
   rowHeader.classList.add('text-primary');
   [
-    'ID',
-    'Valdkonna Teadmised (%)',
+    {
+      'content': 'ID',
+      'value': 'ID',
+    }, {
+      'content': 'Kui tugevad erialateadmised on õpilastel?',
+      'value': 'Valdkonna Teadmised (%)',
+    }, {
+      'content': 'Kui paljud õpilased tunnevad, et nad pingutavad?',
+      'value': 'Pingutus (%)',
+    }, {
+      'content': 'Kui hästi lahendavad õpilased keerulisemaid ülesandeid?',
+      'value': 'Probleemülesanne',
+    },
   ].forEach((title) => {
     const titleCell = document.createElement('th');
-    titleCell.innerHTML = title;
-    titleCell.onclick = function () { fillTable(title, sortBy == title ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
+    titleCell.innerHTML = title['content'];
+    const value = title['value'];
+    titleCell.onclick = function () { fillTable(value, sortBy == value ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
     rowHeader.appendChild(titleCell);
   })
   studentViewTable.appendChild(rowHeader);
@@ -63,6 +87,8 @@ function fillTable(sortBy, sortOrder) {
   row.appendChild(nameCell);
   [
     'Valdkonna Teadmised (%)',
+    'Pingutus (%)',
+    'Probleemülesanne',
   ].forEach((title) => {
     const titleCell = document.createElement('th');
     titleCell.appendChild(scoreSquare(means[title], scores[title]));
@@ -85,6 +111,8 @@ function fillTable(sortBy, sortOrder) {
     // Color-coded cells
     [
       'Valdkonna Teadmised (%)',
+      'Pingutus (%)',
+      'Probleemülesanne',
     ].forEach((taskName) => {
       const taskCell = document.createElement('td');
       taskCell.appendChild(scoreSquare(student[taskName], scores[taskName]));
@@ -104,9 +132,10 @@ function scoreSquare(score, limits) {
     'data-hover',
     `Score: ${score}`
   );
-  if (score < limits.yellow) {
+  const scoreValue = parseFloat(score)
+  if (scoreValue < limits.yellow) {
     scoreSquare.style.backgroundColor = red;
-  } else if (score < limits.green) {
+  } else if (scoreValue < limits.green) {
     scoreSquare.style.backgroundColor = yellow;
   } else {
     scoreSquare.style.backgroundColor = green;

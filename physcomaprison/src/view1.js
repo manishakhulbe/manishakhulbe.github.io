@@ -17,6 +17,7 @@ window.onload = () => {
       'Probleemülesanne peale parandamist',
       'Järeltest',
       'Vastused (sõnade arv)',
+      "Pingutus (%)",
       'Valdkonna Teadmised (%)',
     ].forEach((key) => {
       acc[key] += parseFloat(student[key])
@@ -34,6 +35,7 @@ window.onload = () => {
     'Probleemülesanne peale parandamist': 0,
     'Järeltest': 0,
     'Vastused (sõnade arv)': 0,
+    "Pingutus (%)": 0,
     'Valdkonna Teadmised (%)': 0,
   });
   [
@@ -47,6 +49,7 @@ window.onload = () => {
     'Probleemülesanne peale parandamist',
     'Järeltest',
     'Vastused (sõnade arv)',
+    "Pingutus (%)",
     'Valdkonna Teadmised (%)',
   ].forEach((key) => {
     means[key] = Math.round(means[key] / students.length * 10) / 10;
@@ -78,6 +81,7 @@ function fillTable(sortBy, sortOrder) {
     'Probleemülesanne peale parandamist',
     'Järeltest',
     'Vastused (sõnade arv)',
+    "Pingutus (%)",
     'Valdkonna Teadmised (%)',
   ].forEach((title) => {
     const titleCell = document.createElement('th');
@@ -103,6 +107,7 @@ function fillTable(sortBy, sortOrder) {
     'Probleemülesanne peale parandamist',
     'Järeltest',
     'Vastused (sõnade arv)',
+    "Pingutus (%)",
     'Valdkonna Teadmised (%)',
   ].forEach((title) => {
     const titleCell = document.createElement('th');
@@ -129,6 +134,7 @@ function fillTable(sortBy, sortOrder) {
       'Probleemülesanne peale parandamist',
       'Järeltest',
       'Vastused (sõnade arv)',
+      "Pingutus (%)",
       'Valdkonna Teadmised (%)',
     ].forEach((key) => {
       const taskCell = document.createElement('td');
