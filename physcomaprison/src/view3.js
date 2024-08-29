@@ -27,6 +27,8 @@ window.onload = () => {
   means = students.reduce((acc, student) => {
     [
       'Valdkonna Teadmised (%)',
+      'Pingutus (%)',
+      'Probleemülesanne',
     ].forEach((key) => {
       acc[key] += parseFloat(student[key])
     })
