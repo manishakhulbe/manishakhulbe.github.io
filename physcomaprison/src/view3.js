@@ -82,9 +82,8 @@ function fillTable(sortBy, sortOrder) {
     const value = title['value'];
     titleCell.onclick = function () { fillTable(value, sortBy == value ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
     if (title['hower']) {
-      titleCell.classList.add('hovertext');
       titleCell.setAttribute(
-        'data-hover',
+        'title',
         title['hower']
       )
     }

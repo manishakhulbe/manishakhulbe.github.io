@@ -8,7 +8,7 @@ const titleHowerTexts = {
   'Ülesanne 2': 'Õpilane pidi viitama olemasolevast infost sellele mis tema probleemipüstitust toetas.',
   'Ülesanne 3': 'Õpilane pidi otsima lisainformatsiooni ning kirjeldama kuidas valgus ruumis levib, ning  mis seda levikut mõjutab.',
   'Probleemülesanne': 'Õpilane pidi eelnevat arvestades visandama oma lahenduse probleemile.',
-  'Järeltest': 'Valikvastustega test, mis näitab õpilaste valgusõpetuse teadmisi (küsimused erinesidEeltestist).',
+  'Järeltest': 'Valikvastustega test, mis näitab õpilaste valgusõpetuse teadmisi (küsimused erinesid eeltestist).',
 };
 
 window.onload = () => {
@@ -71,9 +71,8 @@ function fillTable(sortBy, sortOrder) {
     titleCell.innerHTML = title;
     titleCell.onclick = function () { fillTable(title, sortBy == title ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
     if (titleHowerTexts[title]) {
-      titleCell.classList.add('hovertext');
       titleCell.setAttribute(
-        'data-hover',
+        'title',
         titleHowerTexts[title]
       );
     }
