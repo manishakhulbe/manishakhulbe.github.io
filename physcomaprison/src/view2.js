@@ -2,6 +2,15 @@
 import { students } from '../data/physcompare.js';
 let means;
 
+const titleHowerTexts = {
+  'Eeltest': 'Valikvastustega test, mis näitab õpilaste valgusõpetuse teadmisi.',
+  'Ülesanne 1': 'Valikvastustega test, kus õpilane pidi valima mis on ülesande peamine probleem.',
+  'Ülesanne 2': 'Õpilane pidi viitama olemasolevast infost sellele mis tema probleemipüstitust toetas.',
+  'Ülesanne 3': 'Õpilane pidi otsima lisainformatsiooni ning kirjeldama kuidas valgus ruumis levib, ning  mis seda levikut mõjutab.',
+  'Probleemülesanne': 'Õpilane pidi eelnevat arvestades visandama oma lahenduse probleemile.',
+  'Järeltest': 'Valikvastustega test, mis näitab õpilaste valgusõpetuse teadmisi (küsimused erinesidEeltestist).',
+};
+
 window.onload = () => {
   // Means
   means = students.reduce((acc, student) => {
@@ -61,6 +70,13 @@ function fillTable(sortBy, sortOrder) {
     const titleCell = document.createElement('th');
     titleCell.innerHTML = title;
     titleCell.onclick = function () { fillTable(title, sortBy == title ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
+    if (titleHowerTexts[title]) {
+      titleCell.classList.add('hovertext');
+      titleCell.setAttribute(
+        'data-hover',
+        titleHowerTexts[title]
+      );
+    }
     rowHeader.appendChild(titleCell);
   })
   studentViewTable.appendChild(rowHeader);

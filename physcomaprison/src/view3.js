@@ -66,18 +66,28 @@ function fillTable(sortBy, sortOrder) {
     }, {
       'content': 'Kui tugevad erialateadmised on õpilastel?',
       'value': 'Valdkonna Teadmised (%)',
+      'hower': 'Eeltesti, Ülesannete 1, 2 ja 3 kombineeritud skoor. Ülesannetel on erinev kaal.',
     }, {
       'content': 'Kui paljud õpilased tunnevad, et nad pingutavad?',
       'value': 'Pingutus (%)',
+      'hower': 'Õpilaste enda hinnang oma pingutusele (5punktine Likert skaala - 1- Ei pingutanud üldse, ... , 5 - Pingutasin väga).',
     }, {
       'content': 'Kui hästi lahendavad õpilased keerulisemaid ülesandeid?',
       'value': 'Probleemülesanne',
+      'hower': 'Probleemülesande lahendamise võime.',
     },
   ].forEach((title) => {
     const titleCell = document.createElement('th');
     titleCell.innerHTML = title['content'];
     const value = title['value'];
     titleCell.onclick = function () { fillTable(value, sortBy == value ? (sortOrder == 'asc' ? 'desc' : 'asc') : 'asc') };
+    if (title['hower']) {
+      titleCell.classList.add('hovertext');
+      titleCell.setAttribute(
+        'data-hover',
+        title['hower']
+      )
+    }
     rowHeader.appendChild(titleCell);
   })
   studentViewTable.appendChild(rowHeader);
