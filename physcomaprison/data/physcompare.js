@@ -18,7 +18,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "44.946"
     },
     {
-        "ID": "Anja",
+        "ID": "Annikaa",
         "Eeltest": "67%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -36,7 +36,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "47.580"
     },
     {
-        "ID": "Åsa",
+        "ID": "Arnold",
         "Eeltest": "50%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -162,7 +162,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "45.130"
     },
     {
-        "ID": "Calle",
+        "ID": "Cain",
         "Eeltest": "83%",
         "Ülesanne 1": "50%",
         "Pingutus 1": "4",
@@ -234,7 +234,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "24.261"
     },
     {
-        "ID": "Dag",
+        "ID": "Daaniel",
         "Eeltest": "50%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -342,7 +342,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "43.158"
     },
     {
-        "ID": "Frode",
+        "ID": "Franz",
         "Eeltest": "75%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -450,7 +450,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "88.778"
     },
     {
-        "ID": "Hjalmar",
+        "ID": "Holger",
         "Eeltest": "67%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -486,7 +486,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "65.581"
     },
     {
-        "ID": "Jarl",
+        "ID": "Jaagup",
         "Eeltest": "67%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -504,7 +504,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "61.984"
     },
     {
-        "ID": "Jarl",
+        "ID": "Jaanika",
         "Eeltest": "67%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -558,7 +558,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "71.961"
     },
     {
-        "ID": "Kari",
+        "ID": "Kaarel",
         "Eeltest": "75%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -666,7 +666,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "52.854"
     },
     {
-        "ID": "Lina",
+        "ID": "Liina",
         "Eeltest": "92%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "5",
@@ -774,7 +774,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "48.543"
     },
     {
-        "ID": "Magnus",
+        "ID": "Margarita",
         "Eeltest": "83%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "4",
@@ -792,7 +792,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "31.030"
     },
     {
-        "ID": "Nanna",
+        "ID": "Nadine",
         "Eeltest": "83%",
         "Ülesanne 1": "50%",
         "Pingutus 1": "4",
@@ -882,7 +882,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "47.376"
     },
     {
-        "ID": "Nora",
+        "ID": "Norman",
         "Eeltest": "50%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "2",
@@ -900,7 +900,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "48.193"
     },
     {
-        "ID": "Oskar",
+        "ID": "Oliver",
         "Eeltest": "83%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "5",
@@ -936,7 +936,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "77.300"
     },
     {
-        "ID": "Oskar",
+        "ID": "Osvald",
         "Eeltest": "83%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "5",
@@ -1008,7 +1008,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "44.874"
     },
     {
-        "ID": "Rolf",
+        "ID": "Rain",
         "Eeltest": "83%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "3",
@@ -1026,7 +1026,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "89.577"
     },
     {
-        "ID": "Rolf",
+        "ID": "Renne",
         "Eeltest": "83%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "3",
@@ -1062,7 +1062,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "67.944"
     },
     {
-        "ID": "Rolf",
+        "ID": "Ronald",
         "Eeltest": "25%",
         "Ülesanne 1": "10%",
         "Pingutus 1": "4",
@@ -1098,7 +1098,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "37.027"
     },
     {
-        "ID": "Sara",
+        "ID": "Sandra",
         "Eeltest": "58%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "3",
@@ -1116,7 +1116,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "24.406"
     },
     {
-        "ID": "Sigrid",
+        "ID": "Sander",
         "Eeltest": "42%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "3",
@@ -1152,7 +1152,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "44.272"
     },
     {
-        "ID": "Sigurd",
+        "ID": "Sigmar",
         "Eeltest": "75%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "2",
@@ -1242,7 +1242,7 @@ export const students = [
         "Valdkonna Teadmised (%)": "35.246"
     },
     {
-        "ID": "Vilda",
+        "ID": "Vilma",
         "Eeltest": "67%",
         "Ülesanne 1": "100%",
         "Pingutus 1": "2",
